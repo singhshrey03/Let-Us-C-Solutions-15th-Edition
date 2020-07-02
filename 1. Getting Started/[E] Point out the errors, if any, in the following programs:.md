@@ -5,7 +5,7 @@
 ```
 int main( )
 {
-    int a, float b, int c ;
+	int a, float b, int c ;
 	a = 25 ; b = 3.24 ; c = a + b * b – 35 ;
 }
 ```
@@ -22,8 +22,8 @@ int main( )
 #include <stdio.h>
 int main( )
 {
-int a = 35 ; float b = 3.24 ;
-printf ( "%d %f %d", a, b + 1.5, 235 ) ;
+	int a = 35 ; float b = 3.24 ;
+	printf ( "%d %f %d", a, b + 1.5, 235 ) ;
 }
 ```
 
