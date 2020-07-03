@@ -2,7 +2,7 @@
 
 (a)
 
-```
+```c
 int main( )
 {
 	int a, float b, int c ;
@@ -14,7 +14,7 @@ int main( )
 
 (b)
 
-```
+```c
 /* Calculation of average
 	/* Author: Sanjay */
 	/* Place – Whispering Bytes */
@@ -31,7 +31,7 @@ Comments cannot be nested.
 
 (c) 
 
-```
+```c
 #include <stdio.h>
 int main( )
 {
@@ -44,7 +44,7 @@ Use of **Address of  (&)** operator is must before variables in `scanf()`.
 
 (d) 
 
-```
+```c
 #include <stdio.h>
 int main( )
 {
