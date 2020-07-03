@@ -3,7 +3,8 @@
 (a) 
 
 ```c
-include <stdio.h>
+
+#include <stdio.h>
 int main( )
 {
 	int i = 2, j = 3, k, l ;
@@ -25,7 +26,7 @@ int main( )
 (b)
 
 ````c
-# include <stdio.h>
+#include <stdio.h>
 int main( )
 {
     int a, b, c, d ;
@@ -46,7 +47,7 @@ a = 2 b = -2 c = 2 d = -2
 (c)
 
 ````c
-# include <stdio.h>
+#include <stdio.h>
 int main( )
 {
     float a = 5, b = 2 ;
@@ -70,7 +71,7 @@ Instead use, `c = fmod(a, b);` from the header file `math.h`.
 (d)
 
 ````c
-# include <stdio.h>
+#include <stdio.h>
 int main()
 {
     printf ( "nn \n\n nn\n" ) ;
@@ -89,7 +90,7 @@ nn /n/n nn/n
 (e)
 
 ````c
-# include <stdio.h>
+#include <stdio.h>
 int main( )
 {
     int a, b ;
