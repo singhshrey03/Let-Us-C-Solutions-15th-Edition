@@ -19,6 +19,7 @@ int main( )
 
 ```` 
 0 2 0.000000 2.000000
+
 ````
 
 (b)
@@ -39,6 +40,7 @@ int main( )
 
 ````
 a = 2 b = -2 c = 2 d = -2
+
 ````
 
 (c)
@@ -58,6 +60,7 @@ int main( )
 
 ````
 2
+
 ````
 
 NOTE : The statement `c = a % b;` may result in error since `a`  and `b` are `float` variables.
