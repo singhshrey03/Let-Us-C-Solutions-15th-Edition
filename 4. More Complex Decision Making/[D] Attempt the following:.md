@@ -57,11 +57,11 @@ int main(){
 
 (c) A certain grade of steel is graded according to the following conditions:
 
-(i) Hardness must be greater than 50
-
-(ii) Carbon content must be less than 0.7
-
-(iii) Tensile strength must be greater than 5600
+<ol type='i'>
+<li>Hardness must be greater than 50</li>
+<li>Carbon content must be less than 0.7</li>
+<li>Tensile strength must be greater than 5600</li>
+</ol>
 
 The grades are as follows:
 
