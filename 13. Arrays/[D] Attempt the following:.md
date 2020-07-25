@@ -183,15 +183,15 @@ void insertion_sort(int *a, int size){
 
 (c) Implement in a program the following procedure to generate prime numbers from 1 to 100. This procedure is called sieve of Eratosthenes.
 
-Step 1 Fill an array num[ 100 ] with numbers from 1 to 100.
+Step 1: Fill an array num[ 100 ] with numbers from 1 to 100.
 
-Step 2 Starting with the second entry in the array, set all its multiples to zero.
+Step 2: Starting with the second entry in the array, set all its multiples to zero.
 
-Step 3 Proceed to the next non-zero element and set all its multiples to zero.
+Step 3: Proceed to the next non-zero element and set all its multiples to zero.
 
-Step 4 Repeat Step 3 till you have set up the multiples of all the non-zero elements to zero.
+Step 4: Repeat Step 3 till you have set up the multiples of all the non-zero elements to zero.
 
-Step 5 At the conclusion of Step 4, all the non-zero entries left in the array would be prime numbers, so print out these numbers.
+Step 5: At the conclusion of Step 4, all the non-zero entries left in the array would be prime numbers, so print out these numbers.
 
 ````c
 #include<stdio.h>
@@ -220,6 +220,63 @@ int main(){
         }
     }
 
+    return 0;
+}
+````
+
+(d) Twenty-five numbers are entered from the keyboard into an array. Write a program to find out how many of them are positive, how many are negative, how many are even and how many odd.
+
+````c
+#include<stdio.h>
+int main(){
+    int i, num[25], pos, neg, even, odd;
+    pos = 0;
+    neg = 0;
+    even = 0;
+    odd = 0;
+
+    printf("Enter 25 numbers:\n");
+
+    for(i = 0; i < 25; i++)
+        scanf("%d", &num[i]);
+
+    for(i = 0; i < 25; i++){
+
+        if(num[i] > 0)
+            pos++;
+        else
+            neg++;
+
+        if(num[i] % 2 == 0)
+            even++;
+        else
+            odd++;
+    }
+
+    printf("Positive %d\nNegative %d\nEven %d\nOdd %d\n",pos, neg, even, odd);
+    
+    return 0;
+}
+````
+
+(e) Write a program that interchanges the odd and even elements of an array.
+
+````c
+#include <stdio.h>
+int main()
+{
+    int num[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int i, t;
+
+    for(i = 0; i < 10; i+=2){
+        t = num[i];
+        num[i] = num[i+1];
+        num[i+1] = t;
+    }
+
+    for(i = 0; i < 10; i++){
+        printf("%d ", num[i]);
+    }
     return 0;
 }
 ````
