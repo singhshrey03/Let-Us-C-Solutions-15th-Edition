@@ -175,22 +175,21 @@ int main(){
 ````c
 #include<stdio.h>
 int main(){
-    int dec,oct,rev;
+    int dec,n,oct;
     oct = 0;
-    rev = 0;
+    n = 1;
     printf("Enter an integer : ");
-    scanf("%d", dec);
+    scanf("%d",&dec);
     while(dec != 0){
-        oct = oct * 10 + dec % 8;
-        dec = dec / 8;
+        int rem = dec % 8;
+        oct += rem * n;
+        n *= 10;
+        dec /= 8;
     }
-    while(oct != 0){
-        rev = rev * 10 + oct % 10;
-        oct = oct / 10;
-    }
-    printf("%d",rev);
+    printf("%d", oct);
     return 0;
 }
+
 ````
 
 (i) Write a program to find the range of a set of numbers entered through the keyboard. Range is the difference between the smallest and biggest number in the list.
